@@ -1,0 +1,13 @@
+prefix=D:/Coding/VS CODE/vs code programs/python/venv/Library
+exec_prefix=D:/Coding/VS CODE/vs code programs/python/venv/Library
+libdir=D:/Coding/VS CODE/vs code programs/python/venv/Library/lib
+sharedlibdir=D:/Coding/VS CODE/vs code programs/python/venv/Library/lib
+includedir=D:/Coding/VS CODE/vs code programs/python/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

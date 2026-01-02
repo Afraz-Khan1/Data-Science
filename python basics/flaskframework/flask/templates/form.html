@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+           Form
+        </title>
+    </head>
+    <body>
+        <h1>
+            Fill The Following Form For Further Actions
+        </h1>
+        <!-- this action means means go hit /submit url route. method post means this will only run when we click on submit means "post". if we remove action. it will still work but on same form route form/-->    
+        <form action="/submit" method="POST">                        <!-- It means the form sends data to the server using the POST method when submitted.-->
+            <lable for="name">NAME</lable>
+            <input type="text" id="name" name="name"><br><br>  <!-- this means next box will come in new line. first <br> for newline second <br> for gap-->
+            <label for="age">AGE</label>
+            <input type="number" id="age" name="age"><br><br>    <!--this id should match the for="age" or for="name".It means when you click the word “AGE,” the cursor jumps into the age box automatically. and name="age" means that html only use name attribute to call repective age request post-->
+            <input type="submit" value="Submit"><br><br>
+        </form>
+    </body>
+</html>
