@@ -1,0 +1,15 @@
+this theorm is used in machine learning to predict the probability of dependent event. (dependent event is the event whos probability is affected by already happened events)
+
+both formulas are bayes theorm
+formula 1:
+ 
+ pr(A/B)= (pr(A) * pr(B/A) )/ pr(B)
+
+formula 2:
+ pr(B/A)= (pr(B) * pr(A/B) )/ pr(A)
+
+ for example 4th elments need to be pridicted by the first three elements we can use bayes therm in machine learning
+
+ location(x1)   no.of rooms(x2)   size of house(x3)   price(y)
+
+   we can use bayes for this to pridict price. pr(y/x1 x2 x3)= (pr(y) * pr(x1 x2 x3/y)) / pr(x1 x2 x3)

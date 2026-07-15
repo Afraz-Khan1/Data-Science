@@ -1,0 +1,36 @@
+addition rule for mutual and non  mutual exclusive eventss
+
+mutually exclusive means two events occur seperately not together.
+so if we are said to know the probability of mutually exclusive event we simply add those events probability
+
+i.e  p(a or b) = p(A) + p(b)
+
+{H,T} sample space
+
+h event 
+t event
+
+1/2=0.5 for t probability
+1/2=o.5 for h probability
+p(h or t) = 1
+
+non mutually exclusive event means two event occur together and also seperately.
+
+i.e p(a or b) = p(a) + p(b) -p(a n b)
+
+multiplication rule for dependent and independent events
+
+dependent events= events that affect the probability of each other.
+
+for example: probability of getting one king without putting it back in the deck is = 4/52 as total 4 kings in deck
+
+            then getting probability of queen after getting one king will be affected as = 4/51 as one king is already taken
+
+            then pr(k and queen)= pr(king) * pr(queen)/pr(given king) = 4/52 * 4/(1/13)
+
+independent events= when two events dont affect each other. for instance probability of getting 1 then probability of getting 2 will not be affeted by 1
+
+for example: pr(h and t)= pr(h) * pr(t) = 1/2 + 1/2= 1
+
+
+

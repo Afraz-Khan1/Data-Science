@@ -1,0 +1,52 @@
+Chi square is used for categorical data. 
+ its has one theoritical value and one observed value.
+
+we find chi sqaure critical value with alpha and dof than compare with chi score calculated through formula
+ in the end we reject or fail to reject H0.
+
+to use chi square test the sample distribution should be right skewed
+
+Annova:
+ a statistical method used to compare the means of 2 or more groups for a same factor.
+
+ for example: mode of payment(factor)
+              
+              googlepay, pioneer, nft (levels groups)
+
+
+assumptions in Annova:
+1 sample distributio should be normally distributed
+
+2 absence of outlier: remove the outlier from the dataset it any through box plot or iqr 
+
+3 homogenous variance: the population variance sigma^2 should be equal for all independent levels
+
+4 samples are independent and random
+
+types of Annova:
+
+1 one way annova :
+1 factor with atleast 2 levels that are independent
+
+example:
+medication is the factor with levels are the dosage 10mg 20mg 30 mg
+ and the levels are independent doesnt affect each other. so when doctor get the ratings of headache recovery that can be random for each patient.
+
+2 repeated  measures annova:
+ one factor wit hatleast 2 level but levels are independent
+
+ one person run 3 days
+
+ day1  day2  day3
+ 1km    2 km   3km
+ 3km    1km     6km
+  -      -       -
+
+  each day performance vary so they are dependent.
+
+3 factorial annova:
+two or more factore with atlest 2 level. level can be both dependent or not.
+
+
+partitioning in Annova:
+ 

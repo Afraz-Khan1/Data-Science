@@ -1,0 +1,13 @@
+pdf= probability density function. used for continuous random data. like decimal values.
+
+
+pmf= probability  mass function. used for descrete random data whole numbers.
+
+for example. rolling a dice can have random variables like 1,2,3,4,5,6 and getting the probability of each on of them stays 1/6
+
+
+cdf= cummulative density function in which we combine the probability from n to n+1 for calculating probaility of the next random variable. 
+
+example. pr(1) ,pr(2)=pr(1) + pr(2) ...
+
+used to find the probability of i.e pr(x<=6) so pr(x=1) + ... pr(x=6).
