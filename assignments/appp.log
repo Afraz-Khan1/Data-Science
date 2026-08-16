@@ -1,0 +1,35 @@
+2025-08-11 00:36:02 root DEBUG this is a debug 78
+2025-08-11 00:36:02 root DEBUG this is a debug 79
+2025-08-11 00:36:02 root DEBUG this is a debug 80
+2025-08-11 00:36:02 root DEBUG this is a debug 81
+2025-08-11 00:36:02 root DEBUG this is a debug 82
+2025-08-11 00:36:02 root DEBUG this is a debug 83
+2025-08-11 00:36:02 root DEBUG this is a debug 84
+2025-08-11 00:36:02 root DEBUG this is a debug 85
+2025-08-11 00:36:02 root DEBUG this is a debug 86
+2025-08-11 00:36:02 root DEBUG this is a debug 87
+2025-08-11 00:36:02 root DEBUG this is a debug 88
+2025-08-11 00:36:02 root DEBUG this is a debug 89
+2025-08-11 00:36:02 root DEBUG this is a debug 90
+2025-08-11 00:36:02 root DEBUG this is a debug 91
+2025-08-11 00:36:02 root DEBUG this is a debug 92
+2025-08-11 00:36:02 root DEBUG this is a debug 93
+2025-08-11 00:36:02 root DEBUG this is a debug 94
+2025-08-11 00:36:02 root DEBUG this is a debug 95
+2025-08-11 00:36:02 root DEBUG this is a debug 96
+2025-08-11 00:36:02 root DEBUG this is a debug 97
+2025-08-11 00:36:02 root DEBUG this is a debug 98
+2025-08-11 00:36:02 root DEBUG this is a debug 99
+2025-08-11 01:07:16 root ERROR this is a exception message
+Traceback (most recent call last):
+  File "C:\Users\NINJA-C7\AppData\Local\Temp\ipykernel_9516\3237662529.py", line 12, in logg
+    1/0
+    ~^~
+ZeroDivisionError: division by zero
+2025-08-11 01:20:03 root DEBUG this is a debug message
+2025-08-11 01:20:03 root WARNING this is a warning message
+2025-08-11 01:20:03 root INFO this is info message
+2025-08-11 01:20:03 root ERROR this is a exception message
+NoneType: None
+2025-08-11 01:20:03 root CRITICAL this is a critical message
+2025-08-11 01:20:03 root ERROR this is a error message

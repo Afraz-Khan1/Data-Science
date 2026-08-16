@@ -5,7 +5,10 @@ bs4
 flask
 streamlit
 scikit-learn
+<<<<<<< HEAD
 seaborn
 openpyxl
 statsmodels
 plotly
+=======
+>>>>>>> origin/main
