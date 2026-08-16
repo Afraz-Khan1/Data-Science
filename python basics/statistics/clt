@@ -1,0 +1,7 @@
+central limit theorm totally depends on the large number of sampling of the population
+
+in this way we calculate the mean of every sample data from the population and plot them which creates a gaussian distribution also called normal distribution
+
+but there are two scenarios where one in which the population distribution follow normal distribution and the n can be of any value. ploying it will give us same bell curce f normal dis..
+
+other in which the population distribution doesnt follow normal distribution so n should be large enough to be in normal distribution. n >=30 

@@ -1,0 +1,11 @@
+mean formula= np  n= number of trails and p= pass probability
+
+variance= npq
+
+stadard deviation= underroot npq
+
+pmf is used in binomial distribution and the outcome is binary pass or fail
+
+pmf = n^ C sub power(k) p^k q^n-k (if n=1 it will be same as bernoulli distribution)
+
+where no of trial and no of success is given we use binomial distribution.

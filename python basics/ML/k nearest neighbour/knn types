@@ -1,0 +1,39 @@
+k nearest neighbour classification problem
+
+in which a point comes in between two classes and the problem arises where this point belongs 1 or 0.
+
+so we use k value than can be any value for exmaple 1, 2 ,3 ,4 ,5. these values tells how many neighbour will be around that point. the side which has most closest
+neighbour will included that point in that side.
+
+so we need to find the closest neighbour around that unidentified class point in between.
+so we need to use a distance formula.
+
+1 is eullidean distance called crow distance where it reaches through shortest distance to its destination.
+1 is manhattan distance called taxi path distance where a taxi follows the road path to the destination.
+distance formula for 2d where x and y exist.
+underroot (x2 - x1)^2 + (y2 -y1)^2.
+
+so it depends on the problem statement which distance technique we would use. but mostly eullidean distance is used 
+we basically check the most accuracy we get from and use that one. with also doing hyperparameter tunning
+
+k nearest neighbour regression problem
+
+it is much easier
+when a points came between two classes unidentified we just select a k value and find the closest neighbour and take the avg of those group of neighbour
+and if we hvae outliers we take the median of that group.
+
+
+Problem: we need to find the neighbours for the point.
+
+ we have two approches/ algorithms to find the neighbour
+
+1 Kde tree.   
+
+it uses binary tree to search for the closeset neighbour and dont need to search for every element.
+
+2 ball tree
+
+it uses grouping. the points are grouped. when a new point comes the group which is near to it, its all points will be its neighbour . 
+no need to search.
+
+so which one to use? it is analyzed by hyper parameter tunning.

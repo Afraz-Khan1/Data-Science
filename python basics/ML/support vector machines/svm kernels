@@ -1,0 +1,31 @@
+used when the data is overlapped and cannot be easily seperated by svm.
+
+so we use support vector kernels.
+
+SVM Summary:
+
+SVC: Used for classification. It can handle linear and non-linear data using kernels.
+LinearSVC: Used for classification when data is linearly separable. It is faster but only creates a straight decision boundary.
+Kernels: Methods that implicitly transform non-linear data into a higher-dimensional space so SVM can find a linear boundary there.
+When to use transformation:
+With SVC, kernels automatically handle the transformation.
+With LinearSVC, you must manually transform features if the data is not linearly separable.
+
+SVM Summary:
+SVC: Used for classification. It handles linear and non-linear data using kernels.
+LinearSVC: Used for linear data only. It is faster and creates a straight decision boundary.
+Kernels: Methods that implicitly transform non-linear data into a higher-dimensional space so SVM can separate it with a linear boundary.
+When to use kernels:
+If data points are overlapped and cannot be separated by a straight line, use SVC with kernels.
+The kernel creates a higher-dimensional representation where separation becomes easier and reduces misclassified points.
+Example:
+Data is non-linear in 2D → cannot separate with a straight line.
+Use SVC with RBF kernel → it considers the data in a higher dimension (like 3D or more) → finds a better separating boundary.
+Types of kernels:
+Polynomial kernel
+RBF (Gaussian) kernel
+Sigmoid kernel
+One-line difference:
+
+SVC + kernel → handles complex/non-linear boundaries.
+LinearSVC → fast, only for simple linear boundaries.

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <h1>
+        FILL THE FOLLOWING VAUES
+    </h1>
+    <form action="/successres" method="POST"> <!-- action="/successres" tells the browser to call the same Flask route (/successres) again, but this time with POST data when you submit the form.GET → page is opened normally → just show the form (render_template).-->
+        <label for="math"> MATHS </label>
+        <input type="number" id="math" name="math"><br><br>
+        <label for="phy">PHYSICS </label>
+        <input type="number" id="phy" name="phy"><br><br>
+        <label for="chem">CHEMISTRY </label>
+        <input type="number" id="chem" name="chem"><br><br>
+        <label for="isl">ISLAMIAT </label>
+        <input type="number" id="isl" name="isl"><br><br>
+        <input type="submit" value="Submit"><br><br>
+    </form> 
+</html>

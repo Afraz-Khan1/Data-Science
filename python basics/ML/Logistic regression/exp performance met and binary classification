@@ -1,0 +1,129 @@
+Logistic vs. Linear Regression: Logistic regression is designed for categorical outcomes (e.g., pass/fail), while linear regression predicts continuous outcomes.
+Binary Classification: A definition of binary classification is provided, alongside an example using study hours to predict student pass/fail results.
+Limitations of Linear Regression: Linear regression can misclassify outcomes due to outliers and can produce predictions outside the [0, 1] range, which is not suitable for binary outcomes.
+Best Fit Line: The lecture discusses how outliers can distort the best fit line in linear regression, leading to incorrect classifications.
+Squashing Function: The need for a function to limit outputs between 0 and 1 is introduced, which is a fundamental concept for understanding logistic regression.
+The lecture concludes by highlighting the issues with using linear regression for classification and sets the stage for a deeper exploration of logistic regression mechanics
+
+
+Limitations of Linear Regression: It emphasizes how linear regression struggles with outputs outside the range of 0 to 1 and is sensitive to outliers.
+
+Introduction of the Sigmoid Function: The lecture presents the sigmoid activation function, which transforms model outputs to fit within the desired interval of 0 to 1. It describes the function mathematically and illustrates its graph, noting its midpoint at 0.5.
+
+Building the Logistic Regression Hypothesis: The concept of a best-fit line from linear regression is extended by applying the sigmoid function, creating a logistic regression hypothesis that is mathematically represented to produce classification-friendly outputs.
+
+Cost Function Comparison: The lecture compares the cost function of linear regression with that of logistic regression, noting that the latter can yield a non-convex function, complicating optimization.
+
+Log Loss as a Solution: To create a convex cost function for logistic regression, log loss is introduced, which aids in finding the global minimum during the optimization process.
+
+Parameter Minimization: It outlines the iterative updates of parameters (theta values) essential for minimizing the cost function and achieving accurate predictions.
+
+Future Topics: The lecture concludes by indicating that performance metrics will be discussed in future sessions, reinforcing the foundational concepts of logistic regression.
+
+so the final cost function which will give us  a convex function means the gradient decent(an upward open cup graph with a global minima)
+
+cost function= 
+j(0o,01)= -1/2m i=1 to submission m (y^i * log(ho(x)^i)) - (1-y^i)*log(1-ho(x)^i)
+
+Performance metrices:
+for logistic regression there are different performancec metrices unlike linear regression like r2_score adjusted r2 mean squared error etc.
+
+here we have.
+1) confusion metrice
+ where a metrice is used. where the top row is actual value row. and first column is predicted value column.
+
+ when actual value is 1 and predicted value is 1. for understanding we place it in matrix at correct position correspoding the value 1,1. and we use 
+ notation like TP(true positive for it)
+
+ likewise when actual value 0 and predicted value is 0 we use notation TN(true negative.)
+
+ when actual value is 0 and predicted value is 1 its FP(false positive)
+ when actual value 1 and predicted value 0 its FN(false negative)
+
+ so in confusion matrix always correct results are in leading diagonal left to right. and wrong result in other diagonal.
+
+ so by confusion metrice me calculate the accuracy after performing the above process.
+ 2) accuracy formula= (Tp +Tn)/Tp+Fp+Fn+Tn 
+
+ But the issue is not every time we get an balance dataset where rows and column are in the limit to be balanced to make confusion matrix then find accuracy
+
+ like if we have dataset like 900=1 100=0 than we can't use confusion metrice and accuarcy 
+ so for this we use precision and recall metrice.
+
+ 3) precision
+
+ we make same confusion matrix but pick the row by using this statement and use those notation in the formula.
+
+ ( out of all actuall values how many are correctly predicted ones.) as all actuall values are written we pick the actual row
+ accuracy formula= Tp/Tp+Fp
+ and precesion is used to reduce Fp down.
+
+ 4) recall
+
+ same but now we pick first column the predicted one.
+ accuracy formula= Tp/Tp+Fn
+ 
+ recall is used to reduce Fn down.
+
+ Question arises when we use precision and recall.
+
+ use case of precision:
+ for example mail can be spam or not spam.
+ your model predicted it as spam but the mail acutal value was notspam. so in the wrong diagonal of confusion matrix there is a big blunder
+ as the model predicted it as spam means(1) but actual was notspam means(0) so notation is Fp(when model predicts true means(1)). and this blunder should be removed.
+ as Fp is reduced by precision so we use precision in such cases.
+
+
+ use case of recall:
+ for exmaple it is a matter of medical report of a patient having diabetes or no diabetes.
+ the model predicts no diabetes in patient but it has diabetes. it is a blunder of Fn(false negative) which should be removed by recall. as patient can die 
+ if not told about this.
+ if model predicts diabetes but patient has no diabetes. it Fp(false positive) but here patient can have double check by having tests again. so its not alarming.
+ if model predicts diabetes and patient also have diabetes than its goods TP.
+
+ A task for you to solve to check weather you understand or not.
+ question: Tommorow the stock market will crash or not. what we should reduce here Fp or Fn.
+
+ Answer :
+ (First decide which error is more dangerous.
+
+Positive (Yes) = "Stock market will crash tomorrow"
+Negative (No) = "Stock market will not crash tomorrow"
+
+Then:
+
+False Positive (FP): Model predicts crash, but no crash happens.
+Result: Investors may sell unnecessarily.
+False Negative (FN): Model predicts no crash, but a crash actually happens.
+Result: Investors keep their investments and may suffer huge financial losses.
+
+Since missing a real crash (FN) is much more costly than a false alarm (FP), the goal is to reduce False Negatives (FN).
+
+Therefore, use Recall.
+
+Reason:
+
+Recall = Focuses on catching as many actual crashes as possible.
+It minimizes False Negatives (FN).
+
+Performance Metric: Recall
+Reduce: False Negatives (FN)
+Reason: Missing an actual stock market crash can cause major financial losses, so recall is preferred.)
+
+
+5) F beta score 
+ 1) used when Fp and Fn both are important danger
+    
+    f1 score = (1+(beta)^2) * (precision * recall )/ (precision + recall)
+
+    in this case we keep beta=1 
+
+ 2) used when Fp is more important danger than Fn
+    
+    same formula but in this case we keep beta=0.5 reduce it.
+ 
+ 3) used when Fn is more important danger than Fp
+    
+    same formula but in this case we keep beta=2 increase it.
+
+    so in the end we cann use F beta score for any case or we can use recall or precision for each

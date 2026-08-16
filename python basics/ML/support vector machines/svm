@@ -1,0 +1,69 @@
+The lecture covers the Support Vector Machine (SVM), a powerful machine learning algorithm used for classification and regression tasks. Here are the major points:
+
+Foundation on Logistic Regression: SVM builds upon concepts introduced in logistic regression, where the goal is to create a hyperplane that separates data points of different categories.
+
+Marginal Planes: Unlike logistic regression, SVM establishes two marginal planes in addition to the hyperplane(best fit line). These planes maximize the distance between them for clear classification.
+
+Support Vectors: Points closest to the marginal planes are called support vectors, and they are crucial for determining the optimal hyperplane(marginal plane).
+
+Geometric Intuition: The lecture provides insights into how SVM operates in different dimensions (2D and 3D), visualizing the hyperplane and marginal planes.
+
+Importance of Distance: A larger distance between the marginal planes indicates a better classification model, contributing to performance.
+
+Multi-class Classification: SVM's versatility in handling multi-class classification scenarios is emphasized.
+
+
+Soft margin and hard margin:
+softmargin is the margin in which there is some overlapping btw the two classes points where the presence of extra margin will still contain 
+errors. so this refers to softmargin where the two classes points can't be completely seperated by the best fit line and even with svm established margins.
+hardmargin refers to the complete seperation of two classes points leading to no errors refers to hard margin.
+
+
+Support vector machine maths intuition:
+
+Objective: The goal of SVM is to create the best fit line (or hyperplane in higher dimensions) along with its marginal planes that separate different classes of data.
+
+Equation of the Hyperplane: The equation for the best fit line is given by: [ w^T x + b = 0 ] where ( w ) is the weight vector perpendicular to the hyperplane.
+
+Distance Calculation: The distance from a point to this hyperplane is calculated, with points below the hyperplane yielding negative distances and points above yielding positive distances.
+
+Marginal Planes: These are parallel planes to the hyperplane, defined as: [ w^T x + b = +1 {(upper margin)} ] [ w^T x + b = -1 {(lower margin)} ] They help identify the support vectors.
+
+Support Vectors: Support vectors are the points closest to the marginal planes that are crucial for determining the optimal hyperplane.
+
+Maximizing Distance: The lecture emphasizes the importance of maximizing the distance between the marginal planes to improve classification accuracy.
+
+Cost Function: The cost function is introduced to be minimized the distance between the margins by changing w and b: [ {Cost} = {2} / ||w|| ] This function represents the distance between the marginal planes.
+
+Constraints for Classification: The constraints for correctly classifying points are formulated, where the output is labeled as +1 or -1 based on their position relative to the marginal planes.
+when ever y^i=w^T x + b >=1 we will label it +1 and when evee <=-1 we will label the answer y^i as -1.
+
+another constraint is for all correct point:
+y^i*(w^T x + b ) >=1
+
+cost function of SVC(support vector classifier):
+
+2 / ||W|| or ||W||/2
+
+
+||W||/2 -> Minimizing → Reduce something (e.g., cost, error, loss).
+2 / ||W|| ->Maximizing → Increase something (e.g., accuracy, likelihood, margin distance, reward).
+
+Hinge loss:
+Hinge loss is commonly used in machine learning, particularly in support vector machines, for tasks like binary classification. It helps in maximizing the
+margin between classes.
+it is specially a hyper paramter for softmargin where errors exist.
+
+Formula:
+min w,b(for minimizing errors) =||W||/2 + Ci i=1 summation to n   * Ei
+
+( Ei) summation of the distance of the incorrect data point from the marginal planes.
+( Ci ) how mnay points we want to avoid for Misclassification like the points that are not to any side of margin.
+
+Training Objective: Minimizing the hinge loss during training helps to improve the classification accuracy by adjusting the model parameters to reduce
+ errors and widen the margin.
+
+This approach makes hinge loss valuable for ensuring a robust decision boundary, making it a popular choice in various classification scenarios.
+
+
+

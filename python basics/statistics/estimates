@@ -1,0 +1,8 @@
+Estimates are numerical values used to infer or estimate unknown parameters of a population based on observed data. They are essential in inferential statistics, which provides insights beyond just descriptive statistics.
+
+A common type of estimate is the point estimate, which is a single numerical value that estimates an unknown population parameter. For example:
+
+Point Estimate Example: Suppose we want to estimate the average height of a group of people (the population). Instead of measuring everyone, we take a sample of heights and calculate the sample mean (let's say it is 65 inches). In this case, the sample mean (65 inches) serves as the point estimate for the unknown population mean height.
+The key takeaway is that a point estimate provides a specific value, but it does not convey the uncertainty associated with that estimate. For a more comprehensive understanding, an interval estimate can be used, providing a range of values, such as saying the average height is likely between 64 and 66 inches.
+
+Thus, estimates like these help researchers and analysts make informed guesses about a larger population based on limited data.

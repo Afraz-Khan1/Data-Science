@@ -1,0 +1,46 @@
+bernoulli
+have two outcomes . success with probability p. failure with probability 1-p
+
+we done 1-p as q.
+
+so p,q.
+
+and there is k with discrete random variable {1,0} which tell 1= success 0= fail.
+
+and pmf is used in bernoulli. for discrete random variable.
+
+for example. wheather the person wil pass or fail
+ pr(x=pass) =0.4
+ pr(x=fail) =1-0.4 = 1-p= 0.6
+
+ parameter p will always be between 0<= p <=1
+
+ formula of pmf = p^k * (1-p)^1-k
+
+ k=0 fail, k=1 will tell pass
+
+ for example: find the probabiity that a person will pass
+ 
+  pr(k=1)= (0.4)^1 * (1-o.4)^1-1 = 0.4 pass probabiity
+
+  pr(k=0) = (0.6)^0 * (1-0.4)^1-0 = 0.6 pass probability
+
+  mean of bernouli distribution:
+   k*pr(fail) + k*pr(pass)= mean
+   0*(0.6) + 1*(0.4) = 0.4 is mean
+
+  median in bernoulli distribution:
+
+  med= 0.5 if q=p
+
+  med = 1 if q<p
+
+  med = 0 if q>p
+
+  variance in bernoulli distribution:
+
+  sigma^2= pq = ans
+
+  standard deviation in bernoulli:
+
+  sigma= underroot pq

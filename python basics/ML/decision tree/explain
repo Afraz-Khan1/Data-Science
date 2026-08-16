@@ -1,0 +1,15 @@
+decision tree can be used for both classificcation and regression problem statement
+
+ID3 and CART are algorithms for building Decision Trees.
+
+ID3 → uses Entropy / Information Gain to choose splits.
+CART → usually uses Gini Impurity for classification and can also do regression.
+
+In short:
+
+ID3 → Entropy
+CART → Gini (classification) / MSE (regression)
+
+a) entropy and gini index used for purity split. 
+
+b) information gain. used to select the feature for DT construction.

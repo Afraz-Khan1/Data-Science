@@ -1,0 +1,34 @@
+used to know the performance of the trained model.
+
+two methods.
+1 r squared  
+R-squared (R²) is a key performance metric for regression models that measures how well the model's predictions fit the actual data. Specifically, it indicates the proportion of variance in the target variable that can be explained by the features used in the model. The formula for R² is:
+  R2=1−SSres​​/SStot ss= sum of sqaure. res= residual or error between actual value and predicted value. sstot is the s
+
+Where:
+
+SS_residual is the sum of squared residuals, representing the difference between observed and predicted values.
+SS_total is the total sum of squares, indicating the variance of the observed values from the mean.
+An R² of 1 means perfect prediction, while an R² of 0 indicates the model explains none of the variance, performing no better than predicting the mean. A negative R² means the model performs worse than a simple mean prediction.
+
+2 adjusted R squared
+
+Adjusted R-squared is an extension of R² that adjusts for the number of predictors in the model. It is useful for addressing overfitting, as it penalizes models with too many features, providing a more reliable measure of model performance. This adjustment ensures that only relevant predictors enhance the model's effectiveness. Generally, Adjusted R² will be less than or equal to R².
+
+In summary, use R² to understand the initial fit of your model, and Adjusted R² to evaluate models with multiple predictors, ensuring a balance between complexity and performance.
+
+adjusted r^2 formula= 1- (1-r^2)(N-1)/N-P-1  where N=number od data points, P= number of independent features.
+
+
+if you add a new feature that is directly correlated with the target variable, it is likely to increase the Adjusted R-squared value. This is because Adjusted R-squared not only takes into account the goodness of fit as measured by R-squared but also penalizes the inclusion of irrelevant features.
+
+Here's how it works:
+
+Correlation Matters: When you add a relevant feature that has a direct impact on the target variable, it tends to explain more of the variance, which should improve the model's fit.
+
+Adjusted R-squared Behavior: If the new feature contributes valuable information (is correlated), Adjusted R-squared will increase because it reflects an improvement in the model's ability to explain the variance without being overly penalized for adding complexity.
+
+Conversely, if the feature added is not at all correlated with the output, it might not increase Adjusted R-squared or could even decrease it, as it does not improve the model's predictive power.
+
+Thus, the key takeaway is that adding relevant features can enhance Adjusted R-squared, while irrelevant features may hurt it.
+

@@ -1,0 +1,10 @@
+power law distribution uses 80% 20% rule in which graph is right skewed but from top to bottom unlike log normal distribution graph that go bottom to top than comes down right skewed.
+
+we use box cox transformation for powerlaw to make it normal distribution . as machine learning models expects data to be in normal distribution for easier analysis for models
+
+
+pareto distribution is any distribution that follows 20 to 80% rule mean follows powerlaw.
+
+in pareto distribution the grapgh is same as powerlaw but the height ogf line will increase as the value of aplhs eill increase.
+
+used when 20% case effects 80% case wwe use powerlaw 

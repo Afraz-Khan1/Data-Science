@@ -1,0 +1,6 @@
+ipykernel
+numpy
+pandas
+flask
+scikit-learn
+gunicorn

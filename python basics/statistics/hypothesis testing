@@ -1,0 +1,97 @@
+Hypothesis testing is a statistical method used to make inferences or draw conclusions about a population based on sample data. It primarily involves two key hypotheses: the null hypothesis (H₀) and the alternative hypothesis (H₁).
+
+Mechanism of Hypothesis Testing:
+
+Formulate Hypotheses:
+
+Null Hypothesis (H₀): This is the initial assumption that there is no effect or difference, essentially stating that any observed effect is due to sampling variability.
+Alternative Hypothesis (H₁): This represents the opposite claim of null hypothesis that suggests there is an effect or a difference.
+Choose a Significance Level (α): Decide on a threshold for determining statistical significance, commonly set at 0.05.
+experimental hypothesis: tell if null hypothesis is correct or not.
+
+Select a Test: Depending on the data type and hypothesis, choose an appropriate statistical test such as:
+
+Z-test: Used for assessing means when the sample size is large and population variance is known.
+T-test: Used for assessing means when the sample size is small and population variance is unknown.
+Chi-Square Test: Used for categorical data to evaluate how expected counts compare to observed counts.
+ANOVA: Used to compare means across multiple groups.
+Collect Data and Calculate Test Statistic: Use the selected test to analyze the sample data and compute the test statistic that will help determine the validity of H₀.
+
+Determine P-value: This value indicates the probability of observing the data if the null hypothesis is true.
+
+Make a Decision: Compare the P-value to the significance level: also caled alpha
+
+there is a confident interval where the 95% of the chances goes and in that range we take hnull as true . the other 5% on both sides of the bell curve we take h null reject.
+
+If P-value ≤ α, reject the null hypothesis (suggesting evidence for the alternative hypothesis).
+If P-value > α, do not reject the null hypothesis (indicating insufficient evidence to support H₁).
+Draw Conclusions: Summarize the findings and their statistical significance in the context of the research question.
+
+In summary, hypothesis testing is a foundational concept in inferential statistics that allows analysts to draw conclusions about populations based on sample data, using various tests to evaluate different types of data and hypotheses.
+
+now:
+we can only use z test when you know the population standard deviation and n>=30. if n>=30 but no population standard deviation is given we use t test(also called student distribution test.).
+
+and if alternate hypothesis which is also called h1 is less than assumed average in question which is hnot than we do only 1 tail test other wise there will be two tail test if not equal.
+
+how to solve through z test for hypothesis testing:
+calculate z score:
+z=​ xˉ−μ​ / σ/underroot n
+
+Find the p-value from the z-score using the Z-table.
+Compare the p-value with the significance level α (e.g., 0.05).
+Decision:
+If p ≤ α, reject H0
+
+If p > α, fail to reject H0
+
+Important: We usually say "fail to reject H0
+	​
+", not "accept H0
+
+." A large p-value means there isn't enough evidence against H0
+; it does not prove H0 is true.
+
+So your process is correct except for replacing "accept H0
+
+" with "fail to reject H0​
+
+there are actually two methods to solve z test and t test :
+
+Method 1: Critical value method (uses the t-table)
+Choose α (e.g., 0.05).
+Calculate degrees of freedom (df).
+Use α and df to find the critical t-value from the t-table.
+Calculate the t-score (test statistic) using the formula.
+Compare:
+If ∣t∣> critical t → Reject H0.
+
+Otherwise → Fail to reject H0
+
+Why use α and df?
+
+α tells you how much error you're willing to accept.
+df changes the shape of the t-distribution, so the critical value depends on it.
+Method 2: P-value method
+Calculate the t-score.
+Find the p-value corresponding to that t-score.
+Compare:
+If p ≤ α → Reject H0
+	
+If p > α → Fail to reject H0
+
+
+if population standard deviation is not given we use student t distribution test in which we use t table
+
+formula for t score: t=​ xˉ−μ​ / S/underroot n
+
+S for sample standard deviation
+
+we also calculate degree of freedom dof = n-1 ( it tells us how many option are there two choose. i.e three chairs in a room first person comers have 3 options. )
+
+whenever we need to calculate t score we need dof and alpha value to look for t score in table.
+
+
+
+
+

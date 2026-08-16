@@ -1,0 +1,14 @@
+Support Vector Regression (SVR) is a regression algorithm that predicts continuous values (like price, salary, or temperature).
+
+Why is it used?
+
+To predict numeric values accurately.
+It tries to fit the data while ignoring small errors (noise).
+
+What problem does it solve?
+
+It solves regression problems where the relationship between input and output may be complex or non-linear.
+
+when the data is continuous like price not binary classification like in logistic regression. pass or fail.
+
+than there is support vector regression. used.

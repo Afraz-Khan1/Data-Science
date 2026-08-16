@@ -1,0 +1,17 @@
+before starting any thing you venv is an environment where all packages are installed of python if you have created your venv through python -m venv myenv
+because this is only python venv where you can only install python libraries.
+But if you have created your venv through conda. conda create -p venv python==3.13 -y. it have conda default packages and can install other languages packages 
+also without problem.
+conda venv is better for data science and ml projects as it default comes with some packages but python venv only have basic packages means libraries that can
+be installed manualy byself.
+but conda environment allow us to download packages through conda using pip install -r requirements.txt
+venv is an environment where all packages are installed" if venv created through conda packages can also be installed for other languauges also like R c++ python"
+for you so that you can work directly importing the python libraries.
+right click on venv folder and copy path. and open cmd and for conda venv write . cond activate "copied path" enter. for venv of python created only not through conda.
+write in cmd myenv\Scripts\activate. which will activate your venv where all packages are intalled in both venvs like conda(for all 3 languages package downloading optoin and more ) and simple python venv  
+but each time you open vs code you have to press ctrl + shift + p to select the python interpreter of your venv path. so that on py file even tho yoy press ctrl + alt + n
+your file runs not on simple code runner but on your venv. but in ipynb you can select kernel thats why no need to press anything there just run cell.
+but its better to not changing interpreter it can be useless when it shows error sometimes. more convinient way is that open a termianl go in cmd activate your
+conda venv and run any file like py or streamlit .py file.
+.py file where streamlit is used can show error in running while presseing only ctrl+alt+n even tho you have change you python interpreter.
+press ctrl+c while on terminal to stop running a file.

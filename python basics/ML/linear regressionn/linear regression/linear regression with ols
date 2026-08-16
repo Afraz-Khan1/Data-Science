@@ -1,0 +1,39 @@
+Linear Regression with OLS (Ordinary Least Squares) is a method used to find the best-fit line between the input features (X) and the target (Y).
+
+The best-fit line is chosen by minimizing the sum of squared errors (residuals) between the actual and predicted values.
+
+The regression equation is:
+
+yf^=β0+β1x
+
+β0= intercept
+β1= slope (coefficient)
+
+OLS finds the values of β0 and β1
+	​
+that make the prediction errors as small as possible.
+
+In one line:
+Linear Regression with OLS fits the best straight line by minimizing the sum of squared prediction errors.
+formula derived to find bo and b1
+
+b1= submission 1 to n (yi - y^)/submission 1 to n (xi - x^)
+
+bo= y^ - b1x^
+
+In the context of linear regression or statistical modeling, ( b_0 ) and ( b_1 ) represent the coefficients of the regression equation.
+
+( b_0 ) (Intercept): This coefficient represents the expected value of the dependent variable when all independent variables are equal to zero. It can be thought of as the baseline level of the response variable.
+
+( b_1 ) (Slope): This coefficient reflects the change in the dependent variable for a one-unit change in the independent variable. In essence, it indicates the strength and direction of the relationship between the independent and dependent variables.
+
+These coefficients are part of the regression formula, generally expressed as:
+
+[ Y = b_0 + b_1X ]
+
+Where:
+
+( Y ) is the predicted value of the dependent variable.
+( X ) is the independent variable.
+The "error" term accounts for the variability in ( Y ) that cannot be explained by ( X ).
+Their estimation is crucial for understanding how changes in input variables affect the outputs in predictive modeling. 

@@ -1,0 +1,7 @@
+it uses pdf as we are talking about the area under the curve. 
+
+log normal distribution is rightly skewed unlike normal distribution as normal distribution has bell like cvurve.
+
+and it talk about is if x is  log normaly distributed x~~LDA(mean,sd) then for a random variable y=log(all value of x)= normal distribution
+
+

@@ -1,0 +1,9 @@
+uses discrete random variables
+
+uses pmf for graph construction
+
+describes the number of events occuring in a fixed time interval.
+i.e. number of patients coming at 5 pm. and it is used when a success rate lamda is given for a range or interval.
+
+pmf formula (e^-lamda * lamda^x)/x!
+

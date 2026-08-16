@@ -1,0 +1,16 @@
+The "one versus rest" (OvR) approach is a technique used in logistic regression for multi-class classification(class means the target column). Here's a summary of its key points:
+
+Concept: OvR transforms a multi-class classification problem into multiple binary classification problems. For each category in the dataset, a separate model is created to distinguish that category from all others.
+
+Model Creation: If there are three categories, say 0, 1, and 2, three models will be created:
+
+Model M1: Classifies category 0 against categories 1 and 2.
+Model M2: Classifies category 1 against categories 0 and 2.
+Model M3: Classifies category 2 against categories 0 and 1.
+One-Hot Encoding: The output categories are represented using one-hot encoding, converting each category into a binary vector to facilitate the modeling process.
+
+Prediction Process: When predicting a new data point, each model outputs a probability score for the category it represents. The model with the highest probability score indicates the predicted category for the data point.
+
+Practical Applications: OvR is a foundational technique that can be applied in various scenarios where multi-class classification is needed, making it a valuable tool in logistic regression.
+
+OvR is useful because it allows for effective handling of multi-class problems while leveraging the simplicity and efficiency of binary classification models.

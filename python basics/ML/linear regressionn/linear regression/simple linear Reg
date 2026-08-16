@@ -1,0 +1,50 @@
+linear regression
+
+when we have single input we say it as simple linear regression if we have multiple input we say it as multiple linear regression.
+
+in simple linear regression we try to create a best fit lines between the true points. so when a new input comes it can be easily predicted.
+
+-> h0(x)=0o + 01.x equation of straight line used for only 1 feature. it can also be used for multiple feature where we expand 0 till n.
+
+x = independent feature the x axis
+0o= dependent feature y axis
+01= slop. the increase of x axis value while increase of y axis value is slop .
+h0(x)= predicted point = we can also write y^
+
+when ever a new weight comes. we predict its height by using best fit line and to know the expected error in prediction we subtract y(original height) - y^(predicted height)
+the difference came is error. and the sum of all error should be minimal least.
+if there is another best liune which give lower minimal error after summing all errors we will choose that best fit line.
+so in simple linear regression our main is to find best fit line and predict the result, the result is predicted by the model using simple linear reg eq.
+
+so to find best fit line we use cost function
+
+J(θ,01)=1/2m ​i=1∑n​(y^​i​−yi​)^2 this tells the error from actual point to best fit line.
+
+0=intercept
+01=slop
+y^i=predicted point
+yi=original value
+
+our goal is to minimize the error value to find the best fit line. we continuously change the 0o and 01 values to find minimal error possible best 
+fit line.
+
+but to change those 0o and 01 values we cant do it by random we use a convergance algorithm to find a mechanisim to change those values.
+
+repeast until convergance algorithm
+when 0o is considered zero.
+->0j= 0j - alpha * (derivative of 0j * j(0j)) -> slop
+
+if slop negative we subtract it from 0j. to make 0j positve. as 0j - (alpha * -slop) = 0j + (alpha* slop) why? when we are getting continuously
+negative slop in order to reach globl minima where error is least we subtract it.
+
+and same goes for slop continuously comes positive. we still subtract it from 0j to decrease 0j to reach global minima
+
+repeast until convergance algorithm
+when 0o is not zero.
+->0j= 0j - alpha * (derivative of 0j * j(0o,01)) -> slop
+
+0o= 0o - aplha(1/m) ​i=1∑m (ho(x)^i -y^i)
+
+01= 01 - aplha(1/m) ​i=1∑m (ho(x)^i -y^i)x^i
+
+m=number of datapoints

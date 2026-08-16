@@ -1,0 +1,49 @@
+This lecture focuses on three crucial error metrics used in regression analysis: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
+
+MSE: It calculates the average of the squared differences between actual and predicted values. It is preferred because it has a single global minimum, is differentiable, and converges quickly during optimization. However, MSE is sensitive to outliers, which can skew results.
+
+MAE: This metric computes the average of the absolute differences between actual and predicted values. Its advantages include robustness to outliers and an interpretation that aligns with the original data's units. Nonetheless, MAE is less differentiable at zero, possibly leading to slower optimization.
+
+RMSE: As the square root of MSE, RMSE shares benefits with MSE, such as being in original data units and being differentiable. However, similar to MSE, it is also affected by outliers.
+
+The lecture concludes by highlighting the necessity of considering all three metrics for model evaluation and encourages practitioners to understand their pros and cons for discussions in interviews.
+
+Let me know if you need more details on any specific metric!
+
+They are evaluation metrics used to measure how good or bad a regression model is.
+
+MAE (Mean Absolute Error): Average of the absolute errors.
+Easy to understand.
+Lower MAE = better model.
+MSE (Mean Squared Error): Average of the squared errors.
+Penalizes large errors more than MAE.
+Lower MSE = better model.
+RMSE (Root Mean Squared Error): Square root of MSE.
+Same unit as the target variable.
+Easier to interpret than MSE.
+
+In short:
+
+MAE: Average error.
+MSE: Average squared error (punishes large errors).
+RMSE: Typical prediction error in the original units.
+
+For all three metrics, smaller values indicate a better regression model.
+
+
+
+overfitting underfitting
+
+This lecture covers the important concepts of overfitting and underfitting in machine learning, particularly using Python and sklearn.
+
+Data Splitting: The lecture begins by explaining the significance of splitting data into training, validation, and test sets, often using a 70/30 ratio. It's highlighted that the test data should never be seen by the model during training to ensure valid evaluation.
+
+Training and Validation Sets: The training data is divided into a training set (for training the model) and a validation set (for hyperparameter tuning). A well-performing model is defined as a generalized model that achieves good accuracy on both training and test data.
+
+Overfitting vs. Underfitting:
+
+Overfitting: Occurs when the model excels on training data but fails on test data, indicating it has learned noise instead of the actual pattern. This is marked by low bias and high variance.
+Underfitting: Happens when a model performs poorly on both training and test data, suggesting insufficient learning from training data. This scenario sees high bias and high variance.
+Bias-Variance Trade-off: The lecture concludes with a discussion on the bias-variance trade-off, essential for model performance. The aim is to find a balance where both training and test performances are high, indicating a well-generalized model.
+
+The speaker encourages grasping these concepts, as they'll be fundamental for future practical applications, especially when using metrics like R-squared to evaluate model performance.
