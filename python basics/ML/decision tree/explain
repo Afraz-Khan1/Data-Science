@@ -10,6 +10,6 @@ In short:
 ID3 → Entropy
 CART → Gini (classification) / MSE (regression)
 
-a) entropy and gini index used for purity split. 
+a) entropy and gini index are two techniques used for purity split. purity split= number of yes/number of no.  if number of yes greater purity split is pure.
 
 b) information gain. used to select the feature for DT construction.
